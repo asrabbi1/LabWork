@@ -11,3 +11,8 @@ class TodoDetailSerializer(serializers.ModelSerializer):
         model=Todo
         fields='__all__'
         depth=1
+    
+class TodoCreateSerializer(serializers.ModelSerializer):
+    class Meta:
+        model=Todo
+        fields='__all__'
